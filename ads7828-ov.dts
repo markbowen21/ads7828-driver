@@ -1,0 +1,21 @@
+// Definitions for ads7828
+/dts-v1/;
+/plugin/;
+
+/ {
+
+    fragment@0 {
+        target = <&i2c1>; /* Replace with the correct I2C bus */
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <0>;
+            status = "okay";
+
+            ads7828@48 {
+                compatible = "ti,ads7828";
+                reg = <0x76>;
+                status = "okay";
+            };
+        };
+    };
+};

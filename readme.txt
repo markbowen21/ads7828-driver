@@ -2,7 +2,8 @@
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get full-upgrade
+sudo apt full-upgrade
+sudo reboot
 sudo apt install git 
 sudo apt install raspberrypi-kernel-headers
 sudo raspi-config

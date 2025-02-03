@@ -19,11 +19,12 @@
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/of.h>
-#include <linux/platform_data/ads7828.h>
+//#include <linux/platform_data/ads7828.h>
 #include <linux/regmap.h>
 #include <linux/slab.h>
 #include <linux/regulator/consumer.h>
 
+#include "ads7828.h"
 /* The ADS7828 registers */
 #define ADS7828_CMD_SD_SE	0x80	/* Single ended inputs */
 #define ADS7828_CMD_PD1		0x04	/* Internal vref OFF && A/D ON */
