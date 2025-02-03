@@ -5,7 +5,7 @@
 / {
 
     fragment@0 {
-        target = <&i2c1>; /* Replace with the correct I2C bus */
+        target = <&i2c>;
         __overlay__ {
             #address-cells = <1>;
             #size-cells = <0>;
